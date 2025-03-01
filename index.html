@@ -38,9 +38,9 @@
             </div>
       </section>
     <!--main section-->
-    <section class="container mx-auto">
-      <!-- big part -->
-       
+    <section class="container mx-auto grid grid-cols-7 gap-6 ">
+    <!-- big part -->
+    <section class="col-span-5">  
       <div class=" bg-white p-4 rounded-3xl mb-6">
         <!-- top part of big part -->
         <div class="grid grid-cols-4 gap-3 ">
@@ -70,11 +70,11 @@
             </div>
            
         </div>
-        
+
         <hr class="border-t-3 border-dashed border-blue-200 my-6">
 
         <!-- bottom part of big part -->
-         <div class="mt-6 grid grid-cols-3 gap-4">
+         <div class="mt-6 grid grid-cols-3 gap-10">
           <!-- card-1 -->
           <div class="w-80 bg-blue-100 p-6 rounded-3xl ">
             <p class="text-base bg-white p-2 rounded-xl inline ">ShopEase</p>
@@ -191,12 +191,23 @@
           </div>
           
 
-      <!-- small part -->
-       <div>
-
-       </div>
+      
 
     </section>
+    <!-- small part -->
+    <section class="col-span-2">
+      <div class=" bg-white p-4 rounded-3xl h-[765px] overflow-auto">
+        <div class="flex gap-2 items-center justify-center">
+          <img src="./assets/activity.png" alt="">
+          <p class="font-semibold">Activity Log</p>
+        </div>
+        <div class="flex justify-center mt-4"><button class="btn btn-primary rounded-2xl ">Clear History</button></div>
+        <hr class="border-t-3 border-dashed border-blue-200 my-6">
+        <p class="bg-blue-100 p-3 rounded-xl">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+       </div>
+       
+    </section>
+  </section>
     
     
 </body>
