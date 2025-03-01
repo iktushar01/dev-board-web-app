@@ -28,7 +28,7 @@
         <div class="flex items-center gap-2">
           <div class="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-3xl">
             <div><img src="./assets/checkbox.png" alt=""></div>
-            <div><h1 class="font-semibold">23</h1></div>
+            <div><h1 id="count1" class="font-semibold">23</h1></div>
           </div>
           <div id="bg_change_btn" class="bg-blue-100 active:bg-blue-200 rounded-full p-2 cursor-pointer transition-transform duration-300 ease-in-out transform active:-rotate-12 ">             
             <img src="./assets/theme-btn.png" alt="">
@@ -49,7 +49,7 @@
               <div class="p-2 bg-white rounded-full"><img src="./assets/checkbox.png" alt=""></div>
               <div>
                 <p class="font-medium">Task Assigned</p>
-                <h1 class="font-semibold text-2xl">06</h1>
+                <h1 id="count2" class="font-semibold text-2xl">06</h1>
               </div>
             </div>
             <!-- part-2 -->
@@ -63,8 +63,8 @@
             <div class="bg-blue-100 gap-2 flex justify-center items-center rounded-3xl col-span-1">
               <div class="p-2 bg-white rounded-full"><img src="./assets/calender.png" alt=""></div>
               <div>
-                <h1 class="font-medium">Wed,</h1>
-                <h1 class="font-medium">Jul 28 2025</h1>
+                <h1 id="day" class="font-medium"></h1>
+                <h1 id="date" class="font-medium"></h1>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@
           <hr class="border-t-3 border-dashed border-blue-200 my-6">
   
           <!-- bottom part of big part -->
-          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 parent_of_all_cards">
             <!-- card-1 -->
             <div class="w-full max-w-[350px] mx-auto bg-blue-100 p-6 rounded-3xl">
               <p class="text-base bg-white p-2 rounded-xl inline">ShopEase</p>
@@ -200,5 +200,6 @@
     <script src="./script/script.js"></script>
     <script src="./script/handle.js"></script>
     <script src="./script/bgChange.js"></script>
+    <script src="./script/clock.js"></script>
   </body>
 </html> 
