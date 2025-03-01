@@ -53,7 +53,7 @@
               </div>
             </div>
             <!-- part-2 -->
-            <div class="flex justify-start p-2 items-center bg-gradient-to-r from-blue-700 to-blue-400 rounded-3xl col-span-2">
+            <div id="blog_page_here" class="flex justify-start p-2 items-center bg-gradient-to-r from-blue-700 to-blue-400 rounded-3xl col-span-2 cursor-pointer">
               <div><img src="./assets/board.png" alt=""></div>
               <div>
                 <h1 class="text-white font-semibold text-xl">Discover Something <br> New Today!</h1>
@@ -191,7 +191,11 @@
 
 
 
-
+    <script>
+      document.getElementById("blog_page_here").addEventListener("click", function() {
+        window.location.href = "blog.html";
+      });
+    </script>
     <script src="./script/bgChange.js"></script>
   </body>
 </html> 
