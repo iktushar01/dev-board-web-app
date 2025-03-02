@@ -18,9 +18,6 @@ parent.addEventListener("click", function(event) {
     }
 });
 
-
-
-
 document.getElementById('btn_for_click1').addEventListener('click', function() {
     const currentTime = new Date().toLocaleTimeString();
     const newP = document.createElement('p');
