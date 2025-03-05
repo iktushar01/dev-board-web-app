@@ -34,31 +34,314 @@
 
       <main class="container mx-auto">
         <div class="bg-white p-4 rounded-3xl my-6">
-            <h1 class="font-bold text-2xl mb-4">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <p class="font-medium">There are many type of way to select an element in the DOM. getElementById select element by unique ID. getElementsByClassName select by class name.getElementsByTagName select by tag name.</p>
+            <h1 class="font-semibold text-2xl mb-4">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">Different Ways to Select an Element in the DOM</h1>
+                
+                <div class="space-y-6 sm:space-y-8 lg:space-y-10">
+                  <div class="bg-blue-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-blue-700 break-words sm:break-normal">1. By ID (getElementById)</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      You can use <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementById("myId")</span> to select an element by its unique ID.
+                    </p>
+                  </div>
+          
+                  <div class="bg-green-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-green-700 break-words sm:break-normal">2. By Class Name (getElementsByClassName)</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      You can select multiple elements by class name using <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementsByClassName("myClass")</span>. It returns an <strong>HTMLCollection</strong>.
+                    </p>
+                  </div>
+          
+                  <div class="bg-yellow-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-yellow-700 break-words sm:break-normal">3. By Tag Name (getElementsByTagName)</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      You can select all elements with a specific tag name using <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementsByTagName("p")</span>. It returns an <strong>HTMLCollection</strong>.
+                    </p>
+                  </div>
+          
+                  <div class="bg-purple-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-purple-700 break-words sm:break-normal">4. By Name Attribute (getElementsByName)</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      You can select elements with a specific name attribute using <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementsByName("myName")</span>. It returns a <strong>NodeList</strong>.
+                    </p>
+                  </div>
+          
+                  <div class="bg-pink-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-pink-700 break-words sm:break-normal">5. By CSS Selectors (querySelector & querySelectorAll)</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      <strong>querySelector</strong> selects the first matching element: 
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.querySelector(".myClass")</span><br>
+                      <strong>querySelectorAll</strong> selects all matching elements: 
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.querySelectorAll("div.myClass")</span>. These methods return a <strong>NodeList</strong>.
+                    </p>
+                  </div>
+          
+                  <div class="bg-gray-200 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-gray-700 break-words sm:break-normal">6. Using document.body or document.documentElement</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      You can also select the <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.body</span> or <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.documentElement</span> to select the <strong>&lt;body&gt;</strong> or <strong>&lt;html&gt;</strong> element, respectively.
+                    </p>
+                  </div>
+                </div>
+          
+                <p class="mt-6 sm:mt-8 text-center text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl">Use <strong>querySelector</strong> and <strong>querySelectorAll</strong> for maximum flexibility.</p>
+              </div>
+            </div>
+          
         </div>
         <div class="bg-white p-4 rounded-3xl my-6">
             <h1 class="font-bold text-2xl mb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-            <p class="font-medium">innerHTML : sets the HTML content inside an element.
-
-              innerTest : sets only the visible text inside an element.
-              
-              textContent : sets all text inside an element.</p>
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">Difference Between innerHTML, innerText, and textContent</h1>
+                
+                <div class="space-y-6 sm:space-y-8 lg:space-y-10">
+                  <div class="bg-blue-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-blue-700 break-words sm:break-normal">1. innerHTML</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      The <strong>innerHTML</strong> property allows you to get or set the HTML content inside an element, including any HTML tags and elements. It will also render HTML content, like images, links, etc.
+                      <br><span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementById("myElement").innerHTML</span>
+                    </p>
+                  </div>
+          
+                  <div class="bg-green-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-green-700 break-words sm:break-normal">2. innerText</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      The <strong>innerText</strong> property returns the text content of an element, but it excludes any HTML tags and will return the visible text on the screen. It respects the CSS styling, such as <em>visibility:hidden</em> or <em>display:none</em>.
+                      <br><span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementById("myElement").innerText</span>
+                    </p>
+                  </div>
+          
+                  <div class="bg-yellow-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-yellow-700 break-words sm:break-normal">3. textContent</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      The <strong>textContent</strong> property also returns the text content of an element, but unlike <strong>innerText</strong>, it does not respect CSS styling. It returns the raw text content of the element, including text hidden by CSS.
+                      <br><span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">document.getElementById("myElement").textContent</span>
+                    </p>
+                  </div>
+          
+                  <div class="bg-purple-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-purple-700 break-words sm:break-normal">Key Differences</h2>
+                    <ul class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl list-disc list-inside">
+                      <li><strong>innerHTML</strong> gives HTML content and renders it (including tags).</li>
+                      <li><strong>innerText</strong> provides visible text and respects CSS styles.</li>
+                      <li><strong>textContent</strong> returns all the text, including hidden content, and ignores CSS styles.</li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <p class="mt-6 sm:mt-8 text-center text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl">In summary, use <strong>innerHTML</strong> for HTML content, <strong>innerText</strong> for visible text, and <strong>textContent</strong> for raw text regardless of CSS styling.</p>
+              </div>
+            </div>
+          
         </div>
         <div class="bg-white p-4 rounded-3xl my-6">
             <h1 class="font-bold text-2xl mb-4">Question-3: What is event delegation in the DOM?</h1>
-            <p class="font-medium">Event delegation is a method where parent element listens for events 
-              on its child elements using event bubbling.</p>
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">Event Delegation in the DOM</h1>
+                
+                <div class="space-y-6 sm:space-y-8 lg:space-y-10">
+                  <div class="bg-blue-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-blue-700 break-words sm:break-normal">What is Event Delegation?</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      Event delegation is a technique in JavaScript where you attach a single event listener to a parent element to handle events for its child elements.
+                      Instead of attaching individual event listeners to each child element, you delegate the handling of the events to the parent.
+                    </p>
+                  </div>
+          
+                  <div class="bg-green-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-green-700 break-words sm:break-normal">Why Use Event Delegation?</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      Event delegation is efficient, especially when dealing with dynamically added elements or a large number of elements. By attaching an event listener to a parent, you reduce memory usage and simplify your code.
+                    </p>
+                  </div>
+          
+                  <div class="bg-yellow-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-yellow-700 break-words sm:break-normal">How Does It Work?</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      The idea is to take advantage of event bubbling. When an event is triggered on a child element, it bubbles up to the parent element. The parent can then determine which child element triggered the event and handle it accordingly.
+                    </p>
+                  </div>
+          
+                  <div class="bg-purple-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-purple-700 break-words sm:break-normal">Example of Event Delegation</h2>
+                    <pre class="bg-gray-200 p-4 rounded-lg text-gray-800 font-mono break-words sm:break-normal">
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">
+          document.querySelector('.parent').addEventListener('click', function(event) {
+            if (event.target && event.target.matches('button.child')) {
+              alert('Button clicked!');
+            }
+          });
+                      </span>
+                    </pre>
+                    
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      In the above example, the event listener is attached to the parent element with the class <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">.parent</span>. It listens for click events on any <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">button.child</span> inside the parent.
+                    </p>
+                  </div>
+          
+                  <div class="bg-gray-200 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-gray-700 break-words sm:break-normal">Key Benefits of Event Delegation</h2>
+                    <ul class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl list-disc list-inside">
+                      <li>Improves performance by reducing the number of event listeners.</li>
+                      <li>Handles dynamically added elements without needing to reattach event listeners.</li>
+                      <li>Simplifies the code by reducing repetitive event listener code.</li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <p class="mt-6 sm:mt-8 text-center text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl">Event delegation helps in managing events efficiently and makes your code more scalable and maintainable.</p>
+              </div>
+            </div>
+          
         </div>
         <div class="bg-white p-4 rounded-3xl my-6">
             <h1 class="font-bold text-2xl mb-4">Question-4: What is event bubbling in the DOM?</h1>
-            <p class="font-medium">Event bubbling means when you click on a child element, the event moves up to its parent, grandparent, and so on. </p>
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">Event Bubbling in the DOM</h1>
+                
+                <div class="space-y-6 sm:space-y-8 lg:space-y-10">
+                  <div class="bg-blue-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-blue-700 break-words sm:break-normal">What is Event Bubbling?</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      Event bubbling is a concept in JavaScript where an event that occurs on a child element bubbles up through its ancestors in the DOM. 
+                      The event propagates from the innermost element (the target) all the way up to the root element (usually the <span class="font-mono">document</span> object).
+                    </p>
+                  </div>
+          
+                  <div class="bg-green-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-green-700 break-words sm:break-normal">How Does Event Bubbling Work?</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      When an event (like a click) occurs on a child element, the event doesn't just stay on that element; it bubbles up to its parent, then to its parent’s parent, and so on. 
+                      Each parent has the opportunity to handle the event, which makes it possible to attach a single event listener on a parent element to handle events for multiple child elements.
+                    </p>
+                  </div>
+          
+                  <div class="bg-yellow-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-yellow-700 break-words sm:break-normal">Example of Event Bubbling</h2>
+                    <pre class="bg-gray-200 p-4 rounded-lg text-gray-800 font-mono break-words sm:break-normal">
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">
+          document.querySelector('.parent').addEventListener('click', function() {
+            alert('Parent element clicked!');
+          });
+          
+          document.querySelector('.child').addEventListener('click', function(event) {
+            alert('Child element clicked!');
+            event.stopPropagation(); // Stops the event from bubbling up
+          });
+                      </span>
+                    </pre>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      In the above example, if the child element is clicked, the child’s click event will be triggered first. The event then bubbles up to the parent element, triggering the parent’s click event.
+                      We can use <span class="font-mono">event.stopPropagation()</span> to stop the event from bubbling further up.
+                    </p>
+                  </div>
+          
+                  <div class="bg-gray-200 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-gray-700 break-words sm:break-normal">Key Characteristics of Event Bubbling</h2>
+                    <ul class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl list-disc list-inside">
+                      <li>Event starts at the target element and bubbles up to the root of the DOM.</li>
+                      <li>Multiple event listeners can be attached to different levels in the DOM hierarchy.</li>
+                      <li>It is the default behavior for most events in the DOM (like <span class="font-mono">click</span>, <span class="font-mono">keypress</span>, etc.).</li>
+                      <li>Using <span class="font-mono">event.stopPropagation()</span>, you can prevent the event from bubbling up.</li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <p class="mt-6 sm:mt-8 text-center text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl">Event bubbling is an essential concept for efficient event handling in the DOM, enabling you to manage events at the parent level rather than on individual child elements.</p>
+              </div>
+            </div>
         </div>
         <div class="bg-white p-4 rounded-3xl my-6">
             <h1 class="font-bold text-2xl mb-4">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-            <p class="font-medium">Create an element using document.createElement("tagName").
-              Add it using appendChild(), prepend(), or insertBefore().
-              Remove it using remove() or removeChild()</p>
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">Create, Add, and Remove Elements using JavaScript</h1>
+                
+                <div class="space-y-6 sm:space-y-8 lg:space-y-10">
+                  <div class="bg-blue-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-blue-700 break-words sm:break-normal">Creating an Element in JavaScript</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      To create a new element in JavaScript, you can use the <span class="font-mono">document.createElement()</span> method.
+                      This method allows you to create an HTML element that you can later add to the DOM.
+                    </p>
+                    <pre class="bg-gray-200 p-4 rounded-lg text-gray-800 font-mono break-words sm:break-normal">
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">
+          const newDiv = document.createElement('div'); // Creates a new div element
+          newDiv.textContent = 'This is a new div!'; // Adds text to the div
+          document.body.appendChild(newDiv); // Adds the new div to the body of the document
+                      </span>
+                    </pre>
+                  </div>
+          
+                  <div class="bg-green-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-green-700 break-words sm:break-normal">Adding an Element to the DOM</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      Once you create an element, you can add it to the DOM using methods like <span class="font-mono">appendChild()</span> or <span class="font-mono">insertBefore()</span>.
+                      The <span class="font-mono">appendChild()</span> method adds a new child element to the end of the specified parent element.
+                    </p>
+                    <pre class="bg-gray-200 p-4 rounded-lg text-gray-800 font-mono break-words sm:break-normal">
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">
+          const parentDiv = document.querySelector('#parent'); // Selects a parent element
+          parentDiv.appendChild(newDiv); // Adds the new div to the parent element
+                      </span>
+                    </pre>
+                  </div>
+          
+                  <div class="bg-yellow-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-yellow-700 break-words sm:break-normal">Removing an Element from the DOM</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      To remove an element from the DOM, you can use the <span class="font-mono">removeChild()</span> method.
+                      This method removes a specified child element from a parent element.
+                    </p>
+                    <pre class="bg-gray-200 p-4 rounded-lg text-gray-800 font-mono break-words sm:break-normal">
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">
+          parentDiv.removeChild(newDiv); // Removes the new div from the parent element
+                      </span>
+                    </pre>
+                  </div>
+          
+                  <div class="bg-purple-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-purple-700 break-words sm:break-normal">Example: Create, Add, and Remove an Element</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      Below is a complete example demonstrating how to create, add, and remove an element using JavaScript.
+                    </p>
+                    <pre class="bg-gray-200 p-4 rounded-lg text-gray-800 font-mono break-words sm:break-normal">
+                      <span class="bg-gray-200 text-gray-800 p-1 rounded font-mono break-words sm:break-normal">
+          const newDiv = document.createElement('div');
+          newDiv.textContent = 'Click me to remove!';
+          newDiv.style.backgroundColor = '#ffcc00';
+          newDiv.style.padding = '20px';
+          newDiv.style.margin = '10px';
+          document.body.appendChild(newDiv);
+          
+          // Adding an event listener to remove the element when clicked
+          newDiv.addEventListener('click', function() {
+            document.body.removeChild(newDiv); // Removes the div when clicked
+          });
+                      </span>
+                    </pre>
+                  </div>
+          
+                  <div class="bg-gray-200 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold text-gray-700 break-words sm:break-normal">Summary</h2>
+                    <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-xl">
+                      To create, add, and remove elements in the DOM, use <span class="font-mono">document.createElement()</span> to create an element,
+                      <span class="font-mono">appendChild()</span> or <span class="font-mono">insertBefore()</span> to add it to the DOM,
+                      and <span class="font-mono">removeChild()</span> to remove it from the DOM.
+                    </p>
+                  </div>
+                </div>
+          
+                <p class="mt-6 sm:mt-8 text-center text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl">
+                  JavaScript DOM manipulation methods like <span class="font-mono">createElement()</span>, <span class="font-mono">appendChild()</span>, and <span class="font-mono">removeChild()</span> are fundamental for dynamically altering web page content.
+                </p>
+              </div>
+            </div>
         </div>
         
       </main>
