@@ -19,8 +19,8 @@ A minimal and elegant landing page for a developer's productivity dashboard. The
 ---
 
 🛠️ Tech Stack
-HTML5
 
+HTML5
 CSS3
 
 ---
